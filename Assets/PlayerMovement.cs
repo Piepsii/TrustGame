@@ -7,18 +7,18 @@ public class PlayerMovement : MonoBehaviour
     // https://www.youtube.com/watch?v=mbzXIOKZurA
 
     public float moveSpeed = 5f;
-    public Transform movePoint;
 
     public LayerMask whatStopsMovement;
     public bool secondPlayer = false;
 
-    // Start is called before the first frame update
+    private Transform movePoint;
+
     void Start()
     {
+        movePoint = transform.GetChild(0);
         movePoint.parent = null;
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
