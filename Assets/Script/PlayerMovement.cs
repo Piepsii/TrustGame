@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
                     movePoint.position += new Vector3(Input.GetAxisRaw(horizontal), 0f, 0f);
                 }
             }
-            if (Mathf.Abs(Input.GetAxisRaw(vertical)) == 1f)
+            else if (Mathf.Abs(Input.GetAxisRaw(vertical)) == 1f)
             {
                 if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw(vertical), 0f), .2f, whatStopsMovement))
                 {
