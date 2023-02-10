@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Gate : MonoBehaviour
 {
+    [SerializeField] private bool multiway;
     [SerializeField] private int numberOfLevers = 1;
     [SerializeField] private float speed;
     [SerializeField] private Transform target;
@@ -28,10 +29,16 @@ public class Gate : MonoBehaviour
         }
     }
 
+    public void Switch()
+    {
+        moveToTarget = !moveToTarget;
+
+    }
+
     public void On()
     {
         numberOfLevers--;
-        if(numberOfLevers == 0)
+        if (numberOfLevers == 0)
         {
             moveToTarget = true;
         }
