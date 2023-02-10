@@ -7,6 +7,7 @@ public class PlayerPress : MonoBehaviour
     [SerializeField] private KeyCode pressKey;
 
     private Lever lever;
+    private PressurePlate pressurePlate;
     private bool isInRange = false;
 
     private void Update()
@@ -25,11 +26,20 @@ public class PlayerPress : MonoBehaviour
             lever = collider.GetComponent<Lever>();
             isInRange = true;
         }
+        if (collider.CompareTag("Pressure Plate"))
+        {
+            pressurePlate = collider.GetComponent<PressurePlate>();
+            isInRange = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collider)
     {
         if (collider.CompareTag("Lever"))
+        {
+            isInRange = false;
+        }
+        if (collider.CompareTag("Pressure Plate"))
         {
             isInRange = false;
         }
