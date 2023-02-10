@@ -12,11 +12,13 @@ public class PlayerMovement : MonoBehaviour
     public bool secondPlayer = false;
 
     private Transform movePoint;
+    private Vector3 spawnPosition;
 
     void Start()
     {
         movePoint = transform.GetChild(0);
         movePoint.parent = null;
+        spawnPosition = transform.position;
     }
 
     void Update()
@@ -37,6 +39,12 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
+    }
+
+    public void Respawn()
+    {
+        transform.position = spawnPosition;
+        movePoint.position = spawnPosition;
     }
 
     private void GetMovement(string horizontal, string vertical)
