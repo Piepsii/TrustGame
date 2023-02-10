@@ -52,8 +52,8 @@ MonoBehaviour:
   offAction:
     m_PersistentCalls:
       m_Calls: []
-  onSprite: {fileID: -1183304664, guid: f570cb7cab7282d4ea5ad5fb55057644, type: 3}
-  offSprite: {fileID: -1367579418, guid: f570cb7cab7282d4ea5ad5fb55057644, type: 3}
+  onSprite: {fileID: -802315989, guid: 6ff8b99372277cd48837e3f87ecd8cea, type: 3}
+  offSprite: {fileID: 731570153, guid: 6ff8b99372277cd48837e3f87ecd8cea, type: 3}
 --- !u!212 &5274527210254647527
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -95,7 +95,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: -1367579418, guid: f570cb7cab7282d4ea5ad5fb55057644, type: 3}
+  m_Sprite: {fileID: 731570153, guid: 6ff8b99372277cd48837e3f87ecd8cea, type: 3}
   m_Color: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
   m_FlipX: 0
   m_FlipY: 0
