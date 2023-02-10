@@ -23,14 +23,19 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
 
-        if (secondPlayer)
-        {
-            GetMovement("Horizontal2", "Vertical2");
 
-        }
-        else
+        if(Vector3.Distance(transform.position,movePoint.position) < 0.0001f)
         {
-            GetMovement("Horizontal", "Vertical");
+            if (secondPlayer)
+            {
+                GetMovement("Horizontal2", "Vertical2");
+
+            }
+            else
+            {
+                GetMovement("Horizontal", "Vertical");
+            }
+
         }
     }
 
