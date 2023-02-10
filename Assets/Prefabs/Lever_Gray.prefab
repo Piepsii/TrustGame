@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5081097834280791034}
+  - component: {fileID: 6237596220262121976}
   - component: {fileID: 7298988801858790624}
   - component: {fileID: 4056254835799718964}
-  - component: {fileID: 6237596220262121976}
   - component: {fileID: 5792215726861869199}
   m_Layer: 8
   m_Name: Lever_Gray
@@ -35,6 +35,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6237596220262121976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5197889166472137494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2ef088158dc8848967864f58041afa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onAction:
+    m_PersistentCalls:
+      m_Calls: []
+  offAction:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &7298988801858790624
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -107,24 +125,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &6237596220262121976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5197889166472137494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2ef088158dc8848967864f58041afa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onAction:
-    m_PersistentCalls:
-      m_Calls: []
-  offAction:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!61 &5792215726861869199
 BoxCollider2D:
   m_ObjectHideFlags: 0
