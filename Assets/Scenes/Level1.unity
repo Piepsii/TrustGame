@@ -2873,6 +2873,62 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pressure Plate
       objectReference: {fileID: 0}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: onAction.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: offAction.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: onAction.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: offAction.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: onAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2031054795}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: offAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2031054795}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: onAction.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: offAction.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: onAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: On
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: offAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: onAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Gate, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: offAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Gate, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: onAction.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274527210254647524, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
+      propertyPath: offAction.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5274527210254647525, guid: 113dcc84ff560c148a36e37c3c84903a, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -2936,7 +2992,7 @@ PrefabInstance:
       objectReference: {fileID: 549213705}
     - target: {fileID: 5694840498331774732, guid: 4b86963f9fc5ec94582d3c0c9ecbcfe2, type: 3}
       propertyPath: numberOfLevers
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5694840498331774733, guid: 4b86963f9fc5ec94582d3c0c9ecbcfe2, type: 3}
       propertyPath: m_RootOrder

@@ -20,15 +20,20 @@ public class PlayerPress : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Pressure Plate"))
+        {
+            pressurePlate = collider.GetComponent<PressurePlate>();
+            pressurePlate.Press(true);
+        }
+    }
+
     private void OnTriggerStay2D(Collider2D collider)
     {
         if (collider.CompareTag("Lever")){
             lever = collider.GetComponent<Lever>();
-            isInRange = true;
-        }
-        if (collider.CompareTag("Pressure Plate"))
-        {
-            pressurePlate = collider.GetComponent<PressurePlate>();
             isInRange = true;
         }
     }
@@ -41,7 +46,7 @@ public class PlayerPress : MonoBehaviour
         }
         if (collider.CompareTag("Pressure Plate"))
         {
-            isInRange = false;
+            pressurePlate.Press(false);
         }
     }
 }
