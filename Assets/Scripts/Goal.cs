@@ -25,6 +25,7 @@ public class Goal : MonoBehaviour
 
         if(numberOfGoals <= 0)
         {
+            numberOfGoals = 2;
             SceneManager.LoadScene(nextScene);
         }
     }
